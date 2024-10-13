@@ -48,7 +48,7 @@ if __name__ == '__main__':
     print("Task 1:")
     flag()
 
-    print("Task 2:")
+    print('\n' + "Task 2:")
     pattern()
 
     print('\n' + "Task 3:")
