@@ -39,3 +39,4 @@
 Об escape-последовательностях: https://docs-python.ru/tutorial/strokovye-bajtovye-literaly/escape-posledovatelnosti-python/  
 И ещё: https://dvmn.org/encyclopedia/python_strings/ansi-codes/  
 Примеры: https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
+         https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
