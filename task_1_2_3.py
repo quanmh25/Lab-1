@@ -1,9 +1,12 @@
 
 from math import *
 
+
+white = "\x1b[48;5;255m"
 set_green = "\x1b[48;5;28m"                # "\u001b[42m"
 set_red = "\x1b[48;5;196m"                 # "\u001b[41m"
 reset_color = "\033[0m"                    # "\u001b[0m"
+
 
 
 # Task 1:
@@ -25,12 +28,13 @@ def flag():
 
 # Task 2:
 def pattern():
-    for y in range(5):
-        for x in range(5):
-            if y == 0:
-                print(' ' * 5 + set_color + ' ' * 5 + reset_color, end ='')
-            else:
-                print(' ' * 5 + set_color + ' ' * 1 + reset_color + ' ' * 5)
+    print(white + '  ' * 11 + reset_color)
+    print(white + '  ' * 2 + reset_color + '  ' * 5 + white + '  ' * 4 + reset_color)
+    print(white + '  ' * 2 + reset_color + '  ' + white + '  ' * 3 + reset_color + '  ' + white + '  ' * 4 + reset_color)
+    print(white + '  ' * 2 + reset_color + '  ' + white + '  ' + reset_color + '  ' * 3 + white + '  ' * 4 + reset_color)
+    print(white + '  ' * 2 + reset_color + '  ' + white + '  ' + reset_color + '  ' + white + '  ' * 6 + reset_color)
+    print(white + '  ' * 2 + reset_color + '  ' + white + '  ' + reset_color + '  ' * 5 + white + '    ' + reset_color)
+    print(white + '  ' * 11 + reset_color)
 
 
 
@@ -40,10 +44,13 @@ def func():
         print(' ' * (2 * x + 3) + set_red + '*' + reset_color)
 
 
-
 if __name__ == '__main__':
     print("Task 1:")
     flag()
+
+    print("Task 2:")
+    pattern()
+
     print('\n' + "Task 3:")
     func()
 
