@@ -26,6 +26,8 @@ def flag():
                 print(set_green + ' ', end = '')
         print(reset_color)
 
+
+
 # Task 2:
 def pattern():
     print(white + '  ' * 11 + reset_color)
@@ -41,14 +43,14 @@ def pattern():
 #Task 3:
 def func():
     for x in range(10, 0, -1):
-        print(' ' * (2 * x + 3) + set_red + '*' + reset_color)
+        print(white + ' ' * (2 * x + 3) + reset_color + set_red + '*' + reset_color + white + ' ' * (24 - 2 * x) + reset_color)
 
 
 if __name__ == '__main__':
     print("Task 1:")
     flag()
 
-    print('\n' + "Task 2:")
+    print('\n' + "Task 2:" + '\n')
     pattern()
 
     print('\n' + "Task 3:")
