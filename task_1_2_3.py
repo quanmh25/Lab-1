@@ -11,8 +11,9 @@ reset_color = "\033[0m"                    # "\u001b[0m"
 
 # Task 1:
 def flag():
-    length, width = 40, 20
+    length, width = 80, 20
     radius = 3
+
     
     center_x = length // 2
     center_y = width // 2
@@ -47,13 +48,13 @@ def func():
 
 
 if __name__ == '__main__':
-    print("Task 1:")
+    print("Task 1:" + '\n')
     flag()
 
     print('\n' + "Task 2:" + '\n')
     pattern()
 
-    print('\n' + "Task 3:")
+    print('\n' + "Task 3:" + '\n')
     func()
 
 
