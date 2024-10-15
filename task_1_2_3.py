@@ -48,10 +48,11 @@ def func():
         print(white + ' ' * (2 * x + 3) + reset_color + set_red + '*' + reset_color + white + ' ' * (24 - 2 * x) + reset_color)
 
 def animation():
+    frames = [flag, pattern, func]
     for i in range(5):
         for frame in frames:
             os.system("cls" if os.name == 'nt' else 'clear')
-            print(frame)
+            frame()
             time.sleep(2)
 
 if __name__ == '__main__':
@@ -64,7 +65,6 @@ if __name__ == '__main__':
     # print('\n' + "Task 3:" + '\n')
     # func()
 
-    frames = [flag(), pattern(), func()]
     animation()
 
 
