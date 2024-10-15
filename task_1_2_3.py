@@ -48,7 +48,7 @@ def func():
         print(white + ' ' * (2 * x + 3) + reset_color + set_red + '*' + reset_color + white + ' ' * (24 - 2 * x) + reset_color)
 
 def animation():
-    for i in range(5):
+    for _ in range(5):
         for frame in frames:
             os.system("cls" if os.name == 'nt' else 'clear')
             print(frame)
