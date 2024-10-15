@@ -1,12 +1,13 @@
 
 from math import *
+import os
+import time
 
 
 white = "\x1b[48;5;255m"
 set_green = "\x1b[48;5;28m"                # "\u001b[42m"
 set_red = "\x1b[48;5;196m"                 # "\u001b[41m"
 reset_color = "\033[0m"                    # "\u001b[0m"
-
 
 
 # Task 1:
@@ -46,18 +47,24 @@ def func():
     for x in range(10, 0, -1):
         print(white + ' ' * (2 * x + 3) + reset_color + set_red + '*' + reset_color + white + ' ' * (24 - 2 * x) + reset_color)
 
+def animation():
+    for _ in range(5):
+        for frame in frames:
+            os.system("cls" if os.name == 'nt' else 'clear')
+            print(frame)
+            time.sleep(2)
 
 if __name__ == '__main__':
-    print("Task 1:" + '\n')
-    flag()
+    # print("Task 1:" + '\n')
+    # flag()
 
-    print('\n' + "Task 2:" + '\n')
-    pattern()
+    # print('\n' + "Task 2:" + '\n')
+    # pattern()
 
-    print('\n' + "Task 3:" + '\n')
-    func()
+    # print('\n' + "Task 3:" + '\n')
+    # func()
 
-
-
+    frames = [flag(), pattern(), func()]
+    animation()
 
 

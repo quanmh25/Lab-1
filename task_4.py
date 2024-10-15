@@ -19,6 +19,6 @@ if __name__ == '__main__':
     per_1 = round(s1 / (s1 + s2) * 100, 1)
     per_2 = round(s2 / (s1 + s2) * 100, 1) 
 
-    print(red + ' ' * int(per_1)+ reset_color + str(per_1) + '%')
-    print(green + ' ' * int(per_2) + reset_color + str(per_2) + '%')
+    print(red + ' ' * int(per_1)+ reset_color + " процентное соотношение:" + str(per_1) + '%')
+    print(green + ' ' * int(per_2) + reset_color + " процентное соотношение:" + str(per_2) + '%')
 
