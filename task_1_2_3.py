@@ -12,6 +12,8 @@ reset_color = "\033[0m"                    # "\u001b[0m"
 
 # Task 1:
 def flag():
+    print("Task 1:" + '\n')
+
     length, width = 80, 20
     radius = 3
 
@@ -32,6 +34,8 @@ def flag():
 
 # Task 2:
 def pattern():
+    print('\n' + "Task 2:" + '\n')
+
     print(white + '  ' * 11 + reset_color)
     print(white + '  ' * 2 + reset_color + '  ' * 5 + white + '  ' * 4 + reset_color)
     print(white + '  ' * 2 + reset_color + '  ' + white + '  ' * 3 + reset_color + '  ' + white + '  ' * 4 + reset_color)
@@ -44,8 +48,10 @@ def pattern():
 
 #Task 3:
 def func():
+    print('\n' + "Task 3:" + '\n')
     for x in range(10, 0, -1):
         print(white + ' ' * (2 * x + 3) + reset_color + set_red + '*' + reset_color + white + ' ' * (24 - 2 * x) + reset_color)
+
 
 def animation():
     frames = [flag, pattern, func]
@@ -54,6 +60,7 @@ def animation():
             os.system("cls" if os.name == 'nt' else 'clear')
             frame()
             time.sleep(2)
+
 
 if __name__ == '__main__':
     # print("Task 1:" + '\n')
