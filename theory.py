@@ -2,6 +2,7 @@
 
 import time
 
+
 set_color = "\x1b[48;5;"
 end = "\x1b[0m"
 
