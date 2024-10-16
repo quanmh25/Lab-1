@@ -1,5 +1,6 @@
 from math import *
 
+
 red = "\x1b[48;5;196m"
 green = "\x1b[48;5;28m"
 reset_color = "\x1b[0m"
