@@ -30,7 +30,7 @@
 **Узоры**
 
 <p align="center">
-  <img src="lab2patterns.png" width="480" title="Patterns">
+  <img src="patterns.png" width="480" title="Patterns">
 </p>
 
 **Ссылки**
