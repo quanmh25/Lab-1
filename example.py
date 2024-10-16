@@ -1,6 +1,7 @@
-
 # Practical lesson on Sat 05.10.24
+
 import time
+
 
 SET_COLOR = "\x1b[48;5;"            # Thiết lập màu nền
 END = "\x1b[0m"                     # Đặt lại màu sắc về mặc định
