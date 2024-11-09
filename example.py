@@ -59,6 +59,7 @@ def draw_romb():
             # break
 # Hoặc bấm Ctrl + C để dừng ctrinh trên Terminal
 
+
 if __name__ == "__main__":
     draw_romb()
     # for i in range(20):
